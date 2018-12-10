@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: resource-server-mvc-alarm
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: REDIS
+    password: REDIS
+    driver-class-name: oracle.jdbc.OracleDriver
+
+server:
+  port: 8870
+  connection-timeout: 50000  
+  
+eureka:
+  instance:
+      hostname: localhost
+      port: 8761
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      jwt:
+        keyValue: "abc"
+      id: fooScope
+      service-id: ${PREFIX:}resource
+
+      
+      

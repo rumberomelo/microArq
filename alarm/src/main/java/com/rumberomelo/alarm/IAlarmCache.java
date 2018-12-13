@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.rumberomelo.Alarm;
+
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @FeignClient(name = "resource-server-mvc-cache-alarm")

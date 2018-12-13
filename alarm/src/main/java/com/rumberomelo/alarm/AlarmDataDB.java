@@ -11,6 +11,7 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.rumberomelo.Alarm;
 import com.rumberomelo.arq.accessdata.DataSourceBean;
 @Component
 public class AlarmDataDB  implements IAlarmNoCache {
